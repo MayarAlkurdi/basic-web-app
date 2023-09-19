@@ -27,14 +27,9 @@ describe("QueryProcessor", () => {
           ));
     });
 
-    // test('should return 89', () => {
-    //     const query = "Which of the following numbers is the largest: 13, 28, 89?";
-    //     const response: string = QueryProcessor(query);
-    //     expect(response).toBe((
-    //         "89"
-    //       ));
-    // });
-
-    
-
+    test('should add numbers', () => {
+        expect(QueryProcessor("What is 5 plus 52?")).toEqual("57");
+        expect(QueryProcessor("What is 12 plus 1?")).toEqual("13");
+    });
 });
+
