@@ -6,7 +6,14 @@ export default function QueryProcessor(query: string): string {
       "writer in the English language and the world's pre-eminent dramatist." 
     )
 
-  };
+  }
+
+  if (query.toLowerCase().includes("what is your name")) {
+    return (
+      "mayar"
+    )
+
+  }
 
     if (query.toLowerCase().includes("mkurdi")) {
       return (
