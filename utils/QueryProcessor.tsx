@@ -35,6 +35,12 @@ if (minusMatch) {
   return (x-y).toString();
 }
 
+const powerMatch = query.match(/What is (\d+) to the power of (\d+)/);
+if (powerMatch) {
+  const x: number = parseInt(powerMatch[1]);
+  const y: number = parseInt(powerMatch[2]);
+  return (x**y).toString();
+}
 
 const multiplyMatch = query.match(/What is (\d+) multiplied (\d+)/);
 if (multiplyMatch) {

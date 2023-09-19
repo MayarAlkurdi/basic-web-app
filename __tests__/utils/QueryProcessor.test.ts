@@ -43,6 +43,10 @@ describe("QueryProcessor", () => {
         expect(QueryProcessor("What is 12 minus 1?")).toEqual("11");
     });
 
+    test('should power numbers', () => {
+        expect(QueryProcessor("What is 68 to the power of 68?")).toEqual("4.0794917954274785e+124");
+    });
+
 
     test('should compare numbers', () => {
         expect(QueryProcessor("Which of the following numbers is the largest: 76, 67, 82?")).toEqual("82");
