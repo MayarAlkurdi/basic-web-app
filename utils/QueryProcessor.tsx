@@ -37,6 +37,28 @@ if (multiplyMatch) {
   return (x*y).toString();
 }
 
+const compare = query.match(/Which of the following numbers is the largest: (\d+), (\d+), (\d+)/);
+if (compare) {
+  const x: number = parseInt(compare[1]);
+  const y: number = parseInt(compare[2]);
+  const z: number = parseInt(compare[3]);
+  if (x > y){
+    if (x > z){
+      return (x).toString();
+    }}
+  if (y > x){
+      if (y > z){
+        return (y).toString();
+      }}
+
+  if (z > x){
+        if (z > y){
+          return (z).toString();
+        }} 
+  
+}
+
+
 return "";
 }
 

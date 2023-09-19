@@ -37,5 +37,10 @@ describe("QueryProcessor", () => {
         expect(QueryProcessor("What is 12 multiplied 1?")).toEqual("12");
     });
 
+    test('should compare numbers', () => {
+        expect(QueryProcessor("Which of the following numbers is the largest: 76, 67, 82?")).toEqual("82");
+        expect(QueryProcessor("Which of the following numbers is the largest: 48, 95, 41?")).toEqual("95");
+    });
+
 });
 
