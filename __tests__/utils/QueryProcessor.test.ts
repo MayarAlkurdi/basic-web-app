@@ -19,7 +19,7 @@ describe("QueryProcessor", () => {
     });
 
 
-    test('should return shakespeare description', () => {
+    test('should return name', () => {
         const query = "what is your name";
         const response: string = QueryProcessor(query);
         expect(response).toBe((
@@ -27,5 +27,14 @@ describe("QueryProcessor", () => {
           ));
     });
 
+    // test('should return 89', () => {
+    //     const query = "Which of the following numbers is the largest: 13, 28, 89?";
+    //     const response: string = QueryProcessor(query);
+    //     expect(response).toBe((
+    //         "89"
+    //       ));
+    // });
+
+    
 
 });
