@@ -28,6 +28,16 @@ if (addMatch) {
   return (x+y).toString();
 }
 
+
+
+const multiplyMatch = query.match(/What is (\d+) multiplied (\d+)/);
+if (multiplyMatch) {
+  const x: number = parseInt(multiplyMatch[1]);
+  const y: number = parseInt(multiplyMatch[2]);
+  return (x*y).toString();
+}
+
 return "";
 }
+
 

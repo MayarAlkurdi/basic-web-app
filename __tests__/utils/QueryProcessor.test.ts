@@ -31,5 +31,11 @@ describe("QueryProcessor", () => {
         expect(QueryProcessor("What is 5 plus 52?")).toEqual("57");
         expect(QueryProcessor("What is 12 plus 1?")).toEqual("13");
     });
+
+    test('should add numbers', () => {
+        expect(QueryProcessor("What is 5 multiplied 5?")).toEqual("25");
+        expect(QueryProcessor("What is 12 multiplied 1?")).toEqual("12");
+    });
+
 });
 
